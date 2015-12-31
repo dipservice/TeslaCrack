@@ -7,7 +7,7 @@ def fix_key(key):
         key = key[1:] + '\0'
     return key
 
-def main(args, magic = '%PDF', short_key_limit = 240):
+def main(args, magic = '\xd0\xcf\x11\xe0', short_key_limit = 240):
     if len(args) < 2:
         print "usage: unfactor.py <sample file> <space-separated list of factors>"
 
